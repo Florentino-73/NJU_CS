@@ -1,0 +1,2 @@
+D:\NJU\程设实验\项目三 AI五子棋\AI_code\Debug\AI_code.exe
+D:\NJU\程设实验\项目三 AI五子棋\AI_code\Debug\AI_code.pdb
