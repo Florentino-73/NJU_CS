@@ -1,0 +1,15 @@
+
+
+C:/Users/E590/Desktop/Final_EXP/db/decode_8la.tdf
+
+Dec 21 04PM:14:34>: MegaWizard Plug-In Manager does not recognize C:/Users/E590/Desktop/Final_EXP/db/decode_8la.tdf as a wizard-generated
+custom megafunction variation.
+
+Do you want to use a wizard to overwrite it?
+
+C:/Users/E590/Desktop/Final_EXP/db/decode_8la.tdf
+
+Dec 21 04PM:14:35>: MegaWizard Plug-In Manager does not recognize C:/Users/E590/Desktop/Final_EXP/db/decode_8la.tdf as a wizard-generated
+custom megafunction variation.
+
+Do you want to use a wizard to overwrite it?

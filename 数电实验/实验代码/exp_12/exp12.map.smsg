@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at buffer.v(15): always construct contains both blocking and non-blocking assignments File: D:/My_design/exp_12/buffer.v Line: 15
+Info (10281): Verilog HDL Declaration information at exp12.v(67): object "CPU_CLK" differs only in case from object "cpu_clk" in the same scope File: D:/My_design/exp_12/exp12.v Line: 67
