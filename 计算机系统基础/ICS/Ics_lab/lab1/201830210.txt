@@ -1,0 +1,8 @@
+Disks are constructed from platters.
+19795 -2089
+152 151 148 143 136 127
+233 e 104
+12 740 ELugl
+13 69
+6 2 3 5 4 1
+47
