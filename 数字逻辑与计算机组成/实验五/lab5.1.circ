@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.16.1.0.exe" version="1.0">
+  This file is intended to be loaded by Logisim http://logisim.altervista.org
+
+  <lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#TTL" name="2"/>
+  <lib desc="#Plexers" name="3">
+    <tool name="Multiplexer">
+      <a name="enable" val="false"/>
+    </tool>
+    <tool name="Demultiplexer">
+      <a name="enable" val="false"/>
+    </tool>
+    <tool name="Decoder">
+      <a name="enable" val="false"/>
+    </tool>
+  </lib>
+  <lib desc="#Arithmetic" name="4"/>
+  <lib desc="#Memory" name="5">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#Base" name="7">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="7" map="Button2" name="Poke Tool"/>
+    <tool lib="7" map="Button3" name="Menu Tool"/>
+    <tool lib="7" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="7" name="Poke Tool"/>
+    <tool lib="7" name="Edit Tool"/>
+    <sep/>
+    <tool lib="7" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+    <wire from="(530,340)" to="(550,340)"/>
+    <wire from="(580,380)" to="(580,420)"/>
+    <wire from="(460,420)" to="(580,420)"/>
+    <wire from="(600,380)" to="(600,440)"/>
+    <wire from="(460,440)" to="(600,440)"/>
+    <wire from="(620,380)" to="(620,470)"/>
+    <wire from="(460,470)" to="(620,470)"/>
+    <wire from="(640,380)" to="(640,500)"/>
+    <wire from="(460,500)" to="(640,500)"/>
+    <wire from="(460,530)" to="(660,530)"/>
+    <wire from="(660,380)" to="(660,530)"/>
+    <wire from="(460,360)" to="(510,360)"/>
+    <wire from="(510,360)" to="(550,360)"/>
+    <wire from="(530,250)" to="(530,340)"/>
+    <wire from="(460,290)" to="(510,290)"/>
+    <wire from="(510,290)" to="(510,360)"/>
+    <wire from="(460,240)" to="(470,240)"/>
+    <wire from="(470,250)" to="(530,250)"/>
+    <wire from="(470,240)" to="(470,250)"/>
+    <wire from="(690,340)" to="(730,340)"/>
+    <wire from="(730,340)" to="(770,340)"/>
+    <wire from="(730,420)" to="(780,420)"/>
+    <wire from="(730,340)" to="(730,420)"/>
+    <comp lib="0" loc="(460,240)" name="Pin">
+      <a name="width" val="12"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="地址数据"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="6" loc="(460,530)" name="Button">
+      <a name="label" val="复位按钮"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(780,420)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(460,420)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="输入使能"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(460,290)" name="Probe">
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="5" loc="(690,340)" name="RAM">
+      <a name="addrWidth" val="12"/>
+      <a name="dataWidth" val="32"/>
+      <a name="label" val="RAM 输入输出分离同步模式"/>
+      <a name="bus" val="separate"/>
+    </comp>
+    <comp lib="0" loc="(460,470)" name="Clock">
+      <a name="label" val="时钟信号"/>
+    </comp>
+    <comp lib="0" loc="(460,500)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="输出使能"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(460,360)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="输入数据"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(460,440)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="片选"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(770,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="输出数据"/>
+    </comp>
+  </circuit>
+  <circuit name="lab5.1.2">
+    <a name="circuit" val="lab5.1.2"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+    <wire from="(490,290)" to="(540,290)"/>
+    <wire from="(420,250)" to="(420,400)"/>
+    <wire from="(490,210)" to="(490,290)"/>
+    <wire from="(380,250)" to="(380,340)"/>
+    <wire from="(490,210)" to="(530,210)"/>
+    <wire from="(220,340)" to="(380,340)"/>
+    <wire from="(220,310)" to="(360,310)"/>
+    <wire from="(360,250)" to="(360,310)"/>
+    <wire from="(220,400)" to="(420,400)"/>
+    <wire from="(400,250)" to="(400,370)"/>
+    <wire from="(250,210)" to="(310,210)"/>
+    <wire from="(470,120)" to="(470,210)"/>
+    <wire from="(450,210)" to="(470,210)"/>
+    <wire from="(470,210)" to="(490,210)"/>
+    <wire from="(220,370)" to="(290,370)"/>
+    <wire from="(270,50)" to="(270,120)"/>
+    <wire from="(250,50)" to="(270,50)"/>
+    <wire from="(250,120)" to="(270,120)"/>
+    <wire from="(270,120)" to="(280,120)"/>
+    <wire from="(300,120)" to="(470,120)"/>
+    <wire from="(290,130)" to="(290,370)"/>
+    <wire from="(290,370)" to="(340,370)"/>
+    <wire from="(360,370)" to="(400,370)"/>
+    <comp lib="0" loc="(220,340)" name="Clock">
+      <a name="label" val="时钟信号"/>
+    </comp>
+    <comp lib="5" loc="(450,210)" name="RAM">
+      <a name="addrWidth" val="12"/>
+      <a name="dataWidth" val="32"/>
+      <a name="label" val="RAM 同步模式"/>
+    </comp>
+    <comp lib="1" loc="(360,370)" name="NOT Gate"/>
+    <comp lib="0" loc="(530,210)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="输出数据"/>
+    </comp>
+    <comp lib="6" loc="(220,400)" name="Button">
+      <a name="label" val="复位按钮"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(540,290)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(250,50)" name="Probe">
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="1" loc="(300,120)" name="Controlled Buffer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(220,370)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="写使能"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(250,120)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="输入数据"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(250,210)" name="Pin">
+      <a name="width" val="12"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="地址数据"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(220,310)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="片选"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+  </circuit>
+  <circuit name="lab5.1.3">
+    <a name="circuit" val="lab5.1.3"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+    <wire from="(400,210)" to="(400,280)"/>
+    <wire from="(380,370)" to="(440,370)"/>
+    <wire from="(620,450)" to="(670,450)"/>
+    <wire from="(420,530)" to="(470,530)"/>
+    <wire from="(430,280)" to="(600,280)"/>
+    <wire from="(620,370)" to="(660,370)"/>
+    <wire from="(600,280)" to="(600,370)"/>
+    <wire from="(620,370)" to="(620,450)"/>
+    <wire from="(550,410)" to="(550,560)"/>
+    <wire from="(490,530)" to="(530,530)"/>
+    <wire from="(580,370)" to="(600,370)"/>
+    <wire from="(600,370)" to="(620,370)"/>
+    <wire from="(380,210)" to="(400,210)"/>
+    <wire from="(380,280)" to="(400,280)"/>
+    <wire from="(400,280)" to="(410,280)"/>
+    <wire from="(530,410)" to="(530,530)"/>
+    <wire from="(350,470)" to="(490,470)"/>
+    <wire from="(420,290)" to="(420,530)"/>
+    <wire from="(490,410)" to="(490,470)"/>
+    <wire from="(350,560)" to="(550,560)"/>
+    <wire from="(350,530)" to="(420,530)"/>
+    <comp lib="0" loc="(380,370)" name="Pin">
+      <a name="width" val="12"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="地址数据"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(670,450)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(350,530)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="写使能"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="6" loc="(350,560)" name="Button">
+      <a name="label" val="复位按钮"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="5" loc="(580,370)" name="RAM">
+      <a name="addrWidth" val="12"/>
+      <a name="dataWidth" val="32"/>
+      <a name="label" val="RAM 异步模式"/>
+      <a name="bus" val="asynch"/>
+    </comp>
+    <comp lib="0" loc="(380,280)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="输入数据"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(660,370)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="输出数据"/>
+    </comp>
+    <comp lib="1" loc="(490,530)" name="NOT Gate"/>
+    <comp lib="0" loc="(380,210)" name="Probe">
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(350,470)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="片选"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="1" loc="(430,280)" name="Controlled Buffer">
+      <a name="width" val="32"/>
+    </comp>
+  </circuit>
+</project>
