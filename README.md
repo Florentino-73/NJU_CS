@@ -1,2 +1,3 @@
 # NJU_CS
-整理了大一以来各门课的资料，包括课件、试卷和作业等，仅供参考学习使用
+Organized the materials of each course from the freshman to the junior year, including courseware, test papers and homework, etc..
+For reference and study use only.
